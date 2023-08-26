@@ -26,6 +26,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: admiralissimus/diplom2:latest, admiralissimus/diplom2:0.${{ github.run_number }}
+          tags: admiralissimus/diplom2:latest, admiralissimus/diplom2:0.${{ github.run_number }}.0
 
 
