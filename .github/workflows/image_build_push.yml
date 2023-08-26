@@ -26,6 +26,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: diplom2/rps-app:latest
+          tags: admiralissimus/diplom2:latest
 
 
