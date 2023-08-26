@@ -35,5 +35,5 @@ jobs:
           path: k8s
 
       - name: List dirs
-        run: ls -al
+        run: ls -al ./k8s
 
