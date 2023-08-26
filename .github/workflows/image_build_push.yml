@@ -36,7 +36,7 @@ jobs:
 
       - name: List dirs
         run: |
-          sed -i 's|image: admiralissimus/diplom2:.*|image: admiralissimus/0.${{ github.run_number }}.0|' ./k8s/dev/deployment.yaml
+          sed -i 's|image: admiralissimus/.*|image: admiralissimus/diplom2:0.${{ github.run_number }}.0|' ./k8s/dev/deployment.yaml
           cat ./k8s/dev/deployment.yaml
 
       - name: Pushes test file
