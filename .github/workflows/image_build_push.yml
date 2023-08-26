@@ -28,4 +28,12 @@ jobs:
           push: true
           tags: admiralissimus/diplom2:latest, admiralissimus/diplom2:0.${{ github.run_number }}.0
 
+      - name: Checkout k8s infrastructure
+        uses: actions/checkout@v3
+        with:
+          repository: Admiralissimus/IBA-DevOps-Practicum-Diplom2
+          path: k8s
+
+      - name: List dirs
+        run: ls -al
 
