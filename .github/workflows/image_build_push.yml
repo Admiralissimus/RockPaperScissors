@@ -35,5 +35,12 @@ jobs:
           path: k8s
 
       - name: List dirs
-        run: ls -al ./k8s
+        run: |
+          cd ./k8s
+          sed -i 's|image: admiralissimus/diplom2:.*|image: admiralissimus/0.${{ github.run_number }}.0|' ./dev/deployment.yaml
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add .
+          git commit -m "Changed image version in deployment.yml to 0.${{ github.run_number }}.0"
+          git push
 
