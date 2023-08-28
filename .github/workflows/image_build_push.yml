@@ -38,8 +38,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: chrisdickinson/setup-yq@69aa9efdf7a9240129b103a65373c05cbc375679
         uses: chrisdickinson/setup-yq@v1.0.0
-        with:
-          yq-version: 4.35.1
+  
 
       - name: Change deployment.yaml in k8s repo
         run: |
