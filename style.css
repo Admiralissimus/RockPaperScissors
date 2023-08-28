@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(223, 238, 88);
+    background-color: rgb(65, 221, 60);
     font-family: "Silkscreen", sans-serif;
 }
 
@@ -35,8 +35,8 @@ body {
     width: 200px;
     border: 0;
     border-radius: 50%;
-    background-color: #b31818;
-    color: rgb(35, 190, 183);
+    background-color: #2a0adf;
+    color: rgb(30, 185, 25);
     font-size: 48px;
     text-align: center;
 }
