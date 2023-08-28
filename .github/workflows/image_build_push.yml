@@ -34,12 +34,6 @@ jobs:
           repository: Admiralissimus/IBA-DevOps-Practicum-Diplom2
           path: k8s
 
-      - name: setup-yq
-        # You may pin to the exact commit or the version.
-        # uses: chrisdickinson/setup-yq@69aa9efdf7a9240129b103a65373c05cbc375679
-        uses: chrisdickinson/setup-yq@v1.0.0
-  
-
       - name: Change deployment.yaml in k8s repo
         run: |
           yq eval '.spec.template.spec.containers[0].image = "admiralissimus/diplom2:0.${{ github.run_number }}.0"' -i ./k8s/dev/deployment.yaml
