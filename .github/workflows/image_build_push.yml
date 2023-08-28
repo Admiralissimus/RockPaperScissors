@@ -36,7 +36,8 @@ jobs:
 
       - name: Change deployment.yaml in k8s repo
         run: |
-          sed -i 's|image: admiralissimus/diplom2:.*|image: admiralissimus/diplom2:0.${{ github.run_number }}.0|' ./k8s/dev/deployment.yaml
+          yq eval '.spec.template.spec.containers[0].image = "admiralissimus/diplom2:0.${{ github.run_number }}.0"' -i ./k8s/dev/deployment.yaml
+          #sed -i 's|image: admiralissimus/diplom2:.*|image: admiralissimus/diplom2:0.${{ github.run_number }}.0|' ./k8s/dev/deployment.yaml
           cat ./k8s/dev/deployment.yaml
 
       - name: Pushes test file
