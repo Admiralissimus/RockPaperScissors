@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(65, 221, 60);
+    background-color: rgb(144, 233, 221);
     font-family: "Silkscreen", sans-serif;
 }
 
@@ -30,13 +30,13 @@ body {
     font-family: "Silkscreen";
     width: 100%;
     max-width: 256px;
-    box-shadow: 0 3px 10px #2023f0;
+    box-shadow: 0 3px 10px #4346db;
     height: 200px;
     width: 200px;
     border: 0;
     border-radius: 50%;
-    background-color: #2a0adf;
-    color: rgb(30, 185, 25);
+    background-color: #da1e1e;
+    color: rgb(208, 252, 12);
     font-size: 48px;
     text-align: center;
 }
